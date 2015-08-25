@@ -1,3 +1,3 @@
-class Contact < AcriveRecord::Base
+class Contact < ActiveRecord::Base
     
 end
