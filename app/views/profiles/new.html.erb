@@ -4,7 +4,8 @@
           <p class="text-center">Be a prart of the Dev Match community and fill our your profile</p>
           <div class="well">
          
-            <%= form_for @profile, url: user_profile_path do |f| %>
+            <%= form_for Profile, url: user_profile_path do |f| %>
+            
               <div class="form-group">
                   <%= f.label :first_name %>
                   <%= f.text_field :first_name, class: 'form-control' %>
@@ -35,6 +36,7 @@
                 <div class="form-group">
                   
                   <%= f.submit "Update Prifile", class: 'bnt-primary'%>
+                  
               </div>
          <% end %>
          </div>
